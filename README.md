@@ -15,3 +15,6 @@ It is a react frontend app that uses bootstrap library for css of components. We
 ### Step1: in second terminal run `` cd ./contract`` then run ```npm i``` then ```npx hardhat node```
 ### Step1: in third terminal run `` cd ./contract`` then run ```npx hardhat --network localhost run scripts/sample-script.js```
 ### Step1: in first terminal again run ``npm run start``
+
+# Author
+Divya Singh
