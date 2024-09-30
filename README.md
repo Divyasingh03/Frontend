@@ -11,6 +11,34 @@ The deposit function is a function to deposit tokens to our contract.
 # Client
 It is a react frontend app that uses bootstrap library for css of components. We have also used react useEffect as well as use State hooks to handle components state on thier mounting on the webpage.
 
+# Code
+~~~
+//SPDX-License-Identifier: Unlicense
+pragma solidity ^0.8.0;
+
+import "hardhat/console.sol";
+
+contract Greeter {
+    string private greeting;
+
+    constructor(string memory _greeting) {
+        console.log("Deploying a Greeter with greeting:", _greeting);
+        greeting = _greeting;
+    }
+
+    function greet() public view returns (string memory) {
+        return greeting;
+    }
+
+    function setGreeting(string memory _greeting) public {
+        console.log("Changing greeting from '%s' to '%s'", greeting, _greeting);
+        greeting = _greeting;
+    }
+
+    function deposit() public payable {}
+
+}
+~~~
 # Setup
 ## Use the following steps to deploy the DAPP
 ### Step1: Clone the repository
